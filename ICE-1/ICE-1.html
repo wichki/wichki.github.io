@@ -29,26 +29,40 @@
   <h2>Form</h2>
   <p>Please fill out the following information:</p>
   <form>
-  		Name:
-  		<input type="text" name="name" id = "name"><br>
-  		<label for="dob">DOB:</label>
-  		<input type="date" name="DOB" id = "dob"><br><br>
+      <label>Name: <input type="text" name="name" id="name"></label><br>
+      <label>DOB: <input type="date" name="DOB" id="dob"></label><br><br>
+  		<!-- <input type="text" name="name" id="name"><br> -->
+  		<!-- <label for="dob">DOB:</label>
+  		<input type="date" name="DOB" id="dob"><br><br> -->
 
   		Please enter your choice of snack:<br>
-  		<input type="radio" name="pizza" value="pizza">Pizza<br>
-    	<input type="radio" name="donut" value="donut">Donut<br>
-    	<input type="radio" name="vegan" value="vegan">Vegan Stuff<br><br>
+      <div>
+      <label><input type="radio" name="snack" value="Pizza"> Pizza</label>
+    </div>
+    <div>
+      <label><input type="radio" name="snack" value="donut"> Donut</label>
+    </div>
+    <div>
+    <label><input type="radio" name="snack" value="vegan"> Vegan Stuff</label>
+  </div>
+      <!-- <label>Pizza<input type="radio"></label> -->
+  		<!-- <input type="radio" name="pizza" value="pizza" id="pizza"><br> -->
+      <!-- <label for "donut">Donut</label> -->
+      <!-- <label>Donut<input type="radio"></label>
+    	<input type="radio" name="donut" value="donut"><br>
+    	<input type="radio" name="vegan" value="vegan">Vegan Stuff<br><br> -->
 
       Please enter your choice of drink:<br>
-  		<input type="radio" name="coffee" value="coffee">Coffee<br>
-    	<input type="radio" name="tea" value="tea">Tea<br>
-    	<input type="radio" name="water" value="water">Water<br><br>
+  		<input type="radio" name="drink" value="coffee">Coffee<br>
+    	<input type="radio" name="drink" value="tea">Tea<br>
+    	<input type="radio" name="drink" value="water">Water<br><br>
 
       <button type="button">Submit!</button><br>
   	</form>
+  </section>
+<section>
   <h2>Here is one more video! (an iframe element)</h2>
 <iframe src="https://www.youtube.com/embed/hSq11LV4q0o"></iframe>
 </section>
-<!-- <video src="https://www.youtube.com/embed/hSq11LV4q0o" controls></video> -->
 </body>
 </html>
