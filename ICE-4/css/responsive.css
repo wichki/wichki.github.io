@@ -1,0 +1,27 @@
+@media only screen and (min-width: 650px) {
+  .top-nav ul li, .menu-icon {
+    display: inline-block;}
+
+  .top-nav ul {
+    text-align: center;}
+
+  div.photo-cell {
+    display:inline-block;}
+
+  section div:nth-child(3) {
+    width: 47%;}
+  section div:nth-child(4) {
+    width: 47%;}
+}
+
+@media only screen and (min-width: 1000px) {
+  .top-nav ul li, .menu-icon {
+    display: inline-block;}
+
+  .top-nav ul {
+    text-align: right;
+    padding: 10px;}
+
+  .logo img {
+    float:left;}
+}
