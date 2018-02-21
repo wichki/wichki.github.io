@@ -29,25 +29,22 @@
   }
 
   .photo-grid {
-     	  display: grid;
-        width: 100%;
-        height: auto;
-        grid-template-columns: 1fr 1fr;
-        grid-auto-flow: row;
+ 	  display: grid;
+    /* width: 100%; */
+    /* height: auto; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;}
+    /* grid-auto-flow: row;} */
+
+  .photo-cell {
+    grid-column: span 2;
+    padding: 0px;
   }
 
-.photo-grid #yellow {
-    display: inline-block;
-    grid-column: 1;
-    grid-row: 2;
-    width: 47%;
-  }
-  .photo-grid #blueish-purple {
-    display: inline-block;
-    grid-column: 1;
-    grid-row: 2;
-    width: 47%;
-  }
+  #blueish-purple {
+   grid-column: 2 / 2;}
+
+   #yellow {
+     grid-column: 1 / 2;}
 
        /* .photo-grid #a {
         display: inline-block;
