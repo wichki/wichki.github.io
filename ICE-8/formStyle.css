@@ -1,0 +1,72 @@
+/* GENERAL APPEARANCE */
+html, body, h1, form, fieldset, legend, ol, li {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #ffffff;
+	color: #111111;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	padding: .5%;
+}
+
+form{
+	background: #9cbc2c;
+	-moz-border-radius: 2%;
+	-webkit-border-radius: 2%;
+	border-radius: 2%;
+	padding: 2%;
+	width: 50%;
+}
+
+
+/* Style the list items*/
+form ol li {
+	background: #b9cf6a;
+	background: rgba(255,255,255,.3);
+	border-color: #e3ebc3;
+	border-color: rgba(255,255,255,.6);
+	border-style: solid;
+	border-width: .5%;
+	-moz-border-radius: 2%;
+	-webkit-border-radius: 2%;
+	border-radius: 2%;
+	list-style: none;
+	padding: 1% 2%;
+	margin-bottom: .5%;
+}
+
+form ol ol li {
+	background: none;
+	border: none;
+	float: left;
+}
+
+
+
+/*Add a counter to the elements */
+form{
+	counter-reset: fieldsets;
+}
+
+form > fieldset > legend:before {
+	content: "Step " counter(fieldsets) ": ";
+	counter-increment: fieldsets;
+}
+
+/*payment formatting */
+form fieldset fieldset label {
+	background:none no-repeat left 50%;
+	line-height: 20px;
+	padding: 0 0 0 30px;
+	width: auto;
+}
+form label[for=visa] {
+	background-image: url("img/visa.gif");
+}
+form label[for=amex] {
+	background-image: url("img/amex.gif");
+}
+form label[for=mastercard] {
+	background-image: url("img/mastercard.gif");
+}
