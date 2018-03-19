@@ -14,33 +14,30 @@
 
       <h4><u>Basic Information</u></h4>
    <div>
-	</a>
-
       	<!-- Content -->
         <fieldset>
 			<legend>Account Information:</legend>
-			<label> First name:<input type="text" name="fname" required autofocus>
-			</label><br>
+			<label> First name:<input type="text" name="fname" autofocus placeholder="Jane"></label><br>
 
-		  	<label for="lname"> Last name:</label><input type="text" name="lname" required><br>
+		  	<label for="lname"> Last name:</label><input type="text" name="lname" placeholder="Doe"><br>
 
-		  	<label> Email: <input type="email" name="email" required placeholder = "iyad@umich.edu"></label><br>
+		  	<label> Email: <input type="email" name="email" placeholder = "iyad@umich.edu"></label><br>
 
-		  	<label> Password: <input type="password" name="password1"></label><br>
+		  	<label> Password: <input type="password" name="password1" id="password1"></label><br>
 
-		  	<label> Confirm Password: *<input type="password" name="password2" onchange="validatePass(this)"></label><br>
+		  	<label> Confirm Password: *<input type="password" name="password2" onchange="validatePass(this)" id="password2"></label><br>
 		</fieldset><br>
 
 		<fieldset>
 			<legend>Contact Information:</legend>
-			<label>Phone number: <input type="text"></label><br><br>
+			<label>Phone number: <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="555-123-4567"></label><br><br>
 
 		<label>Country of Citizenship: <select id="country" class="bfh-countries" data-country="US"></select><br></label><br>
 
 		<label> Address: <input type="text" id="address" name="address" size="50" placeholder = "1234 N Wells St"></label><br>
 		<label> City: <input type="text" name="city"  placeholder = "Ann Arbor"></label>
 		<label> State: <input type="text" name="state"  placeholder = "MI"></label>
-		<label> Zip code: <input type="text" name="Zip code"  placeholder = "48108"></label><br>
+		<label> Zip code: <input type="text" name="Zip code" placeholder ="48108" pattern="[0-9]{5}"></label><br>
 		</fieldset><br>
       </div>
 
@@ -170,6 +167,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-formhelpers.min.js"></script>
+		<script src="validate.js"></script>
 
 	</body>
 </html>
