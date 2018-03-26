@@ -81,7 +81,7 @@ img {
   flex-direction: row;
   width: 100%;
   justify-content: space-evenly;
-  /* margin: auto 0; */
+  /* justify-content: space-around; */
 }
 
 .project-item {
