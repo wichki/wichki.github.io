@@ -80,8 +80,8 @@ img {
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
-  justify-content: space-evenly;
-  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+  justify-content: space-around;
 }
 
 .project-item {
