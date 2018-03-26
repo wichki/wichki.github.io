@@ -94,7 +94,7 @@ img {
 }
 
 .project1{
-  background-image: url("../350x225.png")
+  background-image: url("../images/350x225.png")
 }
 
 
@@ -219,7 +219,7 @@ img {
   }
 
   .project1, .project2, .project3, .project4, .project5, .project6 {
-    background-image: url("../250x175.png")
+    background-image: url("../images/250x175.png")
   }
 
   .card {
@@ -297,7 +297,7 @@ img {
   }
 
   .project1, .project2, .project3, .project4, .project5, .project6 {
-    background-image: url("../325x225.png")
+    background-image: url("../images/325x225.png")
   }
 
   .card {
@@ -351,7 +351,7 @@ img {
   }
 
   .project1, .project2, .project3, .project4, .project5, .project6 {
-    background-image: url("../375x225.png")
+    background-image: url("../images/375x225.png")
   }
 
   .footer {
