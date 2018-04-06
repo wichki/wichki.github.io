@@ -724,6 +724,10 @@ footer a {
     font-size: 0.75rem;
   }
 
+  .about-facts-content {
+    font-size: 1rem;
+  }
+
 }
 
 /* LARGE SCREENS */
@@ -738,6 +742,10 @@ footer a {
 
   h3 {
     font-size: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
   }
 
   .nav {
@@ -799,6 +807,10 @@ footer a {
   .project-item, .gap {
     width: 400px;
     height: 225px;
+  }
+
+  .about-facts-content {
+    font-size: 1.2rem;
   }
 
 
