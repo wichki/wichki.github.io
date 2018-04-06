@@ -512,7 +512,7 @@ footer a {
 @media screen and (max-width: 525px) {
 
   h1 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 
   h2 {
@@ -580,7 +580,7 @@ footer a {
     grid-row: 2;
     grid-column: 2/9;
     text-align: center;
-    border-top: 5px solid #FD4DB0;
+    /* border-top: 5px solid #FD4DB0; */
   }
 
   .about-content {
@@ -597,6 +597,7 @@ footer a {
     grid-row: 5;
     grid-column: 1/10;
   }
+
 
 
   .writing-title {
@@ -670,7 +671,7 @@ footer a {
 
 
 /* MEDIUM SCREENS */
-@media screen and (min-width: 525px)
+@media screen and (min-width: 526px)
   and (max-width: 850px) {
 
   h1 {
