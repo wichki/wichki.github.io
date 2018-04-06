@@ -1,4 +1,11 @@
 /* GLOBAL STYLE */
+@font-face {
+    font-family: Bitter;
+    src: url('https://fonts.googleapis.com/css?family=Bitter');
+    font-family: Lato;
+    src: url('https://fonts.googleapis.com/css?family=Lato');
+}
+
 * {
   padding: 0;
   margin: 0;
