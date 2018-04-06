@@ -1,5 +1,4 @@
 /* GLOBAL STYLE */
-/* @import url('https://fonts.googleapis.com/css?family=Bitter') */
 
 * {
   padding: 0;
@@ -19,11 +18,6 @@ body {
   linear-gradient(90deg, rgba(255,255,255,.28) 1px, transparent 1px);
   background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
   background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
-}
-
-img {
-  /* max-width: 100%; */
-  object-fit: contain;
 }
 
 p {
@@ -49,49 +43,23 @@ p {
   text-align: center;
 }
 
-
-/* NAV */
-
-/* .nav a {
+.home {
+  font-size: 1.5rem;
   font-family: "Bitter", serif;
-  color: black;
 }
 
-.nav a:hover {
-  border-bottom: 3px solid #FD4DB0;
-} */
+
+/* NAV */
 
 .nav li, .categories li  {
   list-style: none;
   display: inline-block;
 }
 
-
-
 .nav a, .writing-content a, .about-facts-content a, .categories a, .spanall9 a {
   color: #000;
   border-bottom: 2px solid #1DABE3;
   text-decoration: none;
-}
-
-  .home {
-    font-size: 1.5rem;
-    font-family: "Bitter", serif;
-  }
-
-
-  /* background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)), -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)), -webkit-gradient(linear, left top, left bottom, from(#0074d9), to(#0074d9));
-  background: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff), linear-gradient(#1DABE3, #1DABE3);
-  background-size: .05em 1px, .05em 1px, 1px 2px;
-  background-repeat: no-repeat, no-repeat, repeat-x;
-  text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
-  background-position: 0 90%, 100% 90%, 0 83%;
-  text-decoration: none;
-  color: #000;
-  -webkit-transition: color .15s;
-  transition: color .15s; */
-  /* padding: 1%; */
-  /* font-family: "Bitter", serif; */
 }
 
 .nav li {
@@ -114,7 +82,7 @@ body.about a:focus,
   -webkit-transition: color .15s;
   transition: color .15s;
 }
-/* .nav a::-moz-selection {
+.nav a::-moz-selection {
   background-image: none;
   background-color: #0074d9;
   color: #fff;
@@ -125,7 +93,7 @@ body.about a:focus,
   background-color: #0074d9;
   color: #fff;
   text-shadow: none;
-} */
+}
 
 body.about li.about a,
 body.writing li.writing a,
@@ -137,10 +105,23 @@ body.work li.work a {
   padding: 5%;
 }
 
+.nav {
+  grid-row: 1;
+  grid-column: 7/12;
+  text-align: right;
+}
+
+.nav a, .categories {
+  font-family: "Bitter", serif;
+  text-decoration: none;
+}
 
 
 
-/* HEADER  */
+
+
+
+/* TOP  */
 .logo {
   grid-row: 1;
   grid-column: 2;
@@ -152,29 +133,6 @@ body.work li.work a {
   font-size: 3rem;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 1fr;
-  background-color: white;
-  padding-top: 3%;
-  margin: 4%;
-  -webkit-box-shadow: 10px 10px 50px -2px rgba(0,0,0,0.4);
-  -moz-box-shadow: 10px 10px 50px -2px rgba(0,0,0,0.4);
-  box-shadow: 10px 10px 50px -2px rgba(0,0,0,0.4);
-}
-
-
-.nav {
-  grid-row: 1;
-  grid-column: 7/12;
-  text-align: right;
-}
-
-.nav a {
-  font-family: "Bitter", serif;
-  text-decoration: none;
-}
 
 .header {
   grid-row: 2;
@@ -213,6 +171,18 @@ body.work li.work a {
   display: inline-block;
   list-style: none;
   margin: 0 2%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  background-color: white;
+  padding-top: 3%;
+  margin: 4%;
+  -webkit-box-shadow: 10px 10px 50px -2px rgba(0,0,0,0.4);
+  -moz-box-shadow: 10px 10px 50px -2px rgba(0,0,0,0.4);
+  box-shadow: 10px 10px 50px -2px rgba(0,0,0,0.4);
 }
 
 .project-wrapper {
@@ -282,19 +252,17 @@ padding-top: 25%;
 opacity: 1;
 }
 
-
 /* END OVERLAY */
+
 
 /* ENTRY */
 
 .project-wrapper-entry {
   grid-column: 2 / 12;
   grid-row: 4;
-  /* background-color: orange; */
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: 1fr;
-
   flex-wrap: wrap;
   /* flex-direction: row; */
   width: 100%;
@@ -311,15 +279,12 @@ opacity: 1;
   -moz-box-shadow: 10px 10px 25px -8px rgba(0,0,0,0.25);
   box-shadow: 10px 10px 25px -8px rgba(0,0,0,0.25); */
   text-align: center;
-  /* margin-top: 3%; */
   margin: 3% 0;
 }
 
 .highlight {
     background-color: #fff2ac;
     background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%);
-    /* padding: 0 5px; */
-    /* padding-right: 10px; */
     padding: 1%;
 }
 
@@ -328,12 +293,7 @@ opacity: 1;
   text-align: left;
 }
 .role {
-  /* background-color: #7afcff; */
-  /* border-radius: 10px; */
   padding: 15px;
-  /* -webkit-box-shadow: 10px 10px 25px -8px rgba(0,0,0,0.25);
-  -moz-box-shadow: 10px 10px 25px -8px rgba(0,0,0,0.25);
-  box-shadow: 10px 10px 25px -8px rgba(0,0,0,0.25); */
   text-align: center;
   margin-top: 3% 0;
 }
@@ -357,7 +317,6 @@ opacity: 1;
 }
 
 .content {
-  /* padding-top: 15px; */
   grid-column: 4/10;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -383,7 +342,6 @@ margin-bottom: 5%;
 
 .gallery .himage {
   max-width: 500px;
-  /* max-height: 25%; */
 }
 
 .gallery .vimage {
@@ -393,7 +351,6 @@ margin-bottom: 5%;
 .gallery .image {
   max-width: 250px;
 }
-
 
 
 .gallery img {
@@ -430,8 +387,8 @@ footer {
 
 footer p {
   font-size: 0.8rem;
-  font-family: "Roboto Condensed";
-  letter-spacing: 0.2rem;
+  font-family: "Overpass";
+  letter-spacing: 0.1rem;
   color: grey;
 }
 
@@ -525,30 +482,13 @@ footer a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* MEDIA QUERIES */
 
 /* SMALL SCREENS */
 @media screen and (max-width: 525px) {
 
   h1 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   h2 {
@@ -558,7 +498,6 @@ footer a {
   h3 {
     font-size: 0.85rem;
   }
-
 
   .categories {
     grid-column: 2/12;
@@ -581,8 +520,8 @@ footer a {
     line-height: 150%;
   }
 
-  .nav, .categories a {
-    font-size: 0.9rem;
+  .nav, .categories, .categories a {
+    font-size: 0.8rem;
   }
 
   .caption {
@@ -592,11 +531,6 @@ footer a {
     color: #FD4DB0;
     font-size: 2rem;
   }
-
-  /* .project-item, .gap {
-    width: 375px;
-    height: 225px;
-  } */
 
   .project-item, .gap {
     max-width: 100%;
@@ -674,15 +608,6 @@ footer a {
 .noborder {
   border: 0;
 }
-  /* .gallery {
-    margin-bottom: 5%;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .gallery img {
-
-  } */
 
 
   .header-image {
