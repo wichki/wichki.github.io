@@ -335,8 +335,8 @@ grid-gap: 2%;
 /* justify-content: space-between; */
 /* justify-content: center; */
 align-items: center;
-justify-content: space-evenly;
-/* justify-content: space-around; */
+/* justify-content: space-evenly; */
+justify-content: space-around;
 margin-bottom: 5%;
 }
 
@@ -388,7 +388,7 @@ footer {
 footer p {
   font-size: 0.8rem;
   font-family: "Overpass";
-  letter-spacing: 0.1rem;
+  /* letter-spacing: 0.1rem; */
   color: grey;
 }
 
