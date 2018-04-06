@@ -622,13 +622,13 @@ footer a {
 
 
   .writing-title {
-    grid-column: 1/13;
+    grid-column: 2/9;
     text-align: center;
     border-top: 5px solid #FD4DB0;
   }
 
   .writing-content {
-    grid-column: 1/13;
+    grid-column: 1/10;
   }
 
   .content {
