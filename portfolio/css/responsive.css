@@ -154,29 +154,22 @@ body.work li.work a {
   grid-row: 3;
   grid-column: 2 / 12;
   text-align: center;
-  margin-bottom: 3%;
+  margin-bottom: 1%;
   text-transform: lowercase;
 }
 
 .categories a {
   font-family: "Bitter", serif;
-  /* text-decoration: none;
-  color: black;
-  padding: 5%; */
+  display: inline-block;
 }
 
-/* .categories a:hover {
-  color: white;
-  background-color: #FD4DB0;
-  padding: 5%;
-  border-radius: 5px;
-} */
 
 .categories li {
   display: inline-block;
   list-style: none;
   margin: 0 2%;
 }
+
 
 .wrapper {
   display: grid;
