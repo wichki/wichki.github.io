@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fashionable Adoptions - Home</title>
+    <meta charset="UTF-8">
+    <!-- Style -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/high-contrast.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header role="banner">
+      <!-- * Upper Part: Accessibility * -->
+      <div class="upper_header">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Skip -->
+            <div class="col-xs-6 col-sm-3">
+              <div class="row  pull-left">
+                <a href="#main">Skip to main content</a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-9">
+              <div class="row  pull-right">
+                <!-- Enable high contrast -->
+                <input type="checkbox" id="highContrastEnable" name="highContrastEnable">
+                <label for="highContrastEnable">High Contrast</label>
+                <!-- Adjust font size -->
+                <button type="button" class="small-font">A&#8722;
+                  <span class="sr-only">Decrease Text Size</span>
+                </button>
+                <button type="button" class="normal-font">A
+                  <span class="sr-only">Default Text Size</span>
+                </button>
+                <button type="button" class="big-font">A+
+                  <span class="sr-only">Increase Text Size</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- * Lower Part: Logo & Search Panel * -->
+      <!-- Search -->
+      <div class="search">
+        <div class="container-fluid">
+          <div class="row">
+            <form role="search" id="webSearch" class="pull-right" action="./Search.html" method="get">
+              <label for="searchField" class="searchLabel">Website Search</label>
+              <input type="text" id="searchField" name="searchField">
+              <button id="searchSubmit" value="Search" class="btn">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar -->
+      <nav class="navbar navbar-inverse innerWrapper" role="navigation" aria-label="Primary">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- FA logo -->
+            <div class="logo">
+              <a href="#" class="imgLink"><img src="img/FA_logo.jpg" width="200" height="100" alt="Fashionable Adoptions homepage" class="center-block img-responsive"></a>
+            </div>
+            <!-- Nav options -->
+
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="menuitem"><a href="community.html">Community Service</a></li>
+                <li class="menuitem"><a href="model.html">Meet Our Models</a></li>
+              </ul>
+          </class>
+        </div>
+        </class>
+      </nav>
+    </header>
+    <!-- Body -->
+    <main id="main" tabindex="-1" role="main">
+      <!-- Title for the website (screen read only) -->
+      <h1 class="sr-only">Fashionable Adoption</h1>
+
+      <!-- Hero Image(s)-->
+      <div id="Heroimage" class="alignCenter">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/heroimage.jpeg" alt="heroimage1" style="width:100%;">
+                <div class="carousel-caption">
+                <p>Our hearts are pulled to the many furry faces that long to have a warm bed and family to call their own.</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/heroimage.jpeg" alt="heroimage2" style="width:100%;">
+             <!-- Should insert caption later -->
+            </div>
+            <div class="item">
+              <img src="img/heroimage.jpeg" alt="heroimage3" style="width:100%;">
+               <!-- Should insert caption later -->
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Section 1: Our Mission-->
+      <section id="Mission" class="sec-odd alignCenter">
+        <h2>MISSION</h2>
+        <div class="container innerWrapper">
+          <div class="row">
+            <div class="col-xs-12 col-sm-8">
+              <h3>About Fashionable Adoptions</h3>
+              <p>Fashionable Adoptions is an organization aimed at increasing pet adoption and helping alleviate overcrowding at animal shelters in San Antonio by combining fashion, philanthropy, and education to the public. We believe there needs to be more awareness surrounding animal adoption and kill shelters and our approach sheds a fun and fashionable light on an otherwise sad topic. Our hearts are pulled to the many furry faces that long to have a warm bed and family to call their own. We have partnered up with local shelters and organizations to help shine a light in a glamorous way to those who are eager to be loved.</p>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <img src="img/FA_logo_white.jpg" alt="Fashionable Adoptions logo">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 2: Our Founder(s)-->
+      <section id="Founder" class="sec-even alignCenter">
+        <h2>OUR FOUNDER</h2>
+        <div class="container innerWrapper">
+          <div class="row">
+            <div class="col-xs-12 col-sm-4">
+              <img src="img/Crystal.jpg"  alt="Founder's photo">
+            </div>
+            <div class="col-xs-12 col-sm-8">
+              <h3>Crystal Lopez-Crebs</h3>
+              <p>Crystal Lopez-Crebs took her passion and love for animals and created Fashionable Adoptions. Her fire to fight for those who cannot fight for themselves in sewn into all the work that she has done to be a voice for the cause. Whether volunteering her time at the shelter, creating events to bring awareness, or going home to love on her own dog and appreciate the true value an animal can have on your life, Crystal lives to advocate for all animals.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 3: Support -->
+      <section id="Support" class="sec-odd alignCenter">
+        <h2>SUPPORT US</h2>
+        <div class="container innerWrapper">
+          <div class="row">
+            <div class="span6" style="float: none; margin: 0 auto;">
+
+              <!-- subsection: Volunteer -->
+              <div class="support-item volunteer col-xs-12 col-sm-4">
+                <h3>Volunteer</h3>
+                <img src="img/volunteer.png" height="150px" width="150px" alt="Volunteer">
+                <p>Are you a fabulous animal lover? We would love to have you join our team for our events and other projects we are working on! Let's help our local animals find their happy homes in a fun, fashionable way! </p>
+                <button type="button" class="support-button"><a href="info.html">Act Now</a></button>
+              </div>
+
+              <!-- subsection: Donate  -->
+              <div class="support-item donate col-xs-12 col-sm-4">
+                <h3>Donate</h3>
+                <img src="img/donation.png" height="150px" width="150px" alt="Donate">
+                <p>With every generous gift, we are able to create the opportunity for a loving animal to find a home. We assist in funding for animals in need of a little love from a Vet. If you aren't in a position to adopt, you can impact an animal in need by making a donation!</p>
+                <button type="button" class="support-button"><a href="info.html">Donate</a></button>
+              </div>
+
+              <!-- subsection: Subscribe -->
+              <div class="support-item subscribe col-xs-12 col-sm-4">
+                <h3>Subscribe</h3>
+                <img src="img/subscribe.png" height="150px" width="150px" alt="Subscribe">
+                <p>Want to know the latest event from Fashionable Adoption? Leave your email and name and we will send our newsletter to you!</p>
+                <!-- Begin MailChimp Signup Form -->
+                <form action="https://fashionableadoptions.us12.list-manage.com/subscribe/post?u=14be354e4b712c89440cfd867&amp;id=171b104ca2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                  <div class="mc-field-group">
+                    <label for="mce-EMAIL">Email</label>
+                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                  </div>
+                  <div class="mc-field-group">
+                    <label for="mce-NAME">Name </label>
+                    <input type="text" value="" name="NAME" class="" id="mce-NAME">
+                  </div>
+                 <button type="button" class="support-button"><a href="info.html">Act Now</a></button>
+                </form>
+                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='NAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);
+                </script>
+                <!-- End MailChimp Signup Form -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <a class="imgLink"  target="_blank" href="http://knowbility.org/" id="Knowablility_logo">
+              <img src="img/Knowablility_logo.png" alt="knowbility - External website opens in new tab" >
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <p>
+              Fashionable Adoptions 2018 All Rights Reserved
+            </p>
+            <p>
+              Last Update: Apr 2, 2018
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- JAVASCRIPT -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+
+  </body>
+</html>
