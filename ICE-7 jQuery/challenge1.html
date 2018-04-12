@@ -2,13 +2,18 @@
 <html lang="en">
   <head>
     <title>JavaScript Challenges</title>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script>
     $(document).ready(function(){
-      /*    YOUR jQuery CODE HERE */ 
-    }); 
+      /*    YOUR jQuery CODE HERE */
+      $("#emailfield").hide();
+        $("#subscribe").click(function(){
+          $("#emailfield").toggle();
+
+        });
+      });
     </script>
   </head>
   <body>
@@ -25,7 +30,7 @@
 
         <div id="emailfield">
           <label>
-            Email Address: 
+            Email Address:
             <input type="text" name="email" id="email">
           </label>
         </div>

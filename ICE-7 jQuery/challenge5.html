@@ -38,6 +38,7 @@
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
+<!--
 	<script type="text/javascript">
 	// I used Two functions here.  Starter idea at:
 	// https://codepen.io/ColleenEMc/pen/XmZzWw
@@ -45,30 +46,30 @@
 		//
 		$(".preview").on("mouseover focus", showImage);
 		$(".preview").on("mouseover blur", hideImage);
-		// $(".preview").on("mouseover blur", hideImage);
-	});
+	// });
 
 	function showImage () {
-		// console.log(this);
-		// console.log($(this));
+		// var img = this;
+		// var $img = $(this);
 
-		var img = this;
-		var $img = $(this);
-
-		img.src
-		$img.attr("src")
+		// img.src
+		// $img.attr("src")
 
 		// var src = this.src;
-		var src = $img.attr("src");
+		// var src = $img.attr("src");
 		// $("#image").css("background-image", "url(" + src + ")");
 		// $("#image").css("border-color", "red")
-			$("#image").css({
-				"background-image": "url(" + src + ")",
-				"border-color": "red"
-			})
+			// $("#image").css({
+			// 	"background-image": "url(" + src + ")",
+			// 	// "border-color": "red"
+			// })
 
-		var alt = $img.attr("alt");
-		$("#image").text(alt)
+		// var alt = $img.attr("alt");
+		// $("#image").text($(this).attr("alt"));
+
+		$("#image").text($(this).attr("alt"));
+    $("#image").css('background-image', 'url("' + $(this).attr("src") + '")');
+
 	}
 
 	function hideImage(){
@@ -79,7 +80,25 @@
 		$("#image").text("Hover over an image below.")
 
 	}
-	</script>
+
+		});
+	</script> -->
+
+	<script type="text/javascript">
+    $(document).ready(function(){
+        $(".preview" ).on('focus mouseover',function() {
+        $("#image").text($(this).attr("alt"));
+        $("#image").css('background-image', 'url("' + $(this).attr("src") + '")');
+        })
+
+        $(".preview" ).on('blur mouseleave',function() {
+        $("#image").text("Hover over an image below");
+        $("#image").css('background-image', '');
+      })
+    });
+    </script>
+
+
 </head>
 
 <body>
@@ -89,19 +108,18 @@
 		</div>
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview"
+		<img class = "preview" tabindex="1"
 			alt = "Styling with a Bandana"
-			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg";
-			>
+			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg";>
 
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview"
+		<img class = "preview" tabindex="2"
 			alt = "With My Boy"
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG";>
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview" tabindex = "1"
+		<img class = "preview" tabindex = "3"
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg"
 			alt = "Young Puppy";>
 </body>
