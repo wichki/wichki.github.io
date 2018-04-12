@@ -6,15 +6,15 @@
 		<script type="text/javascript">
 		function checkForm(){
 			// Write a function that ensures at least one but ONLY one radio button is selected.  Make sure the form action is not performed if either field is blank.
-			s = document.getElementById("opt-straw").checked;
-			b = document.getElementById("opt-blue").checked;
-			alert(s);
-			alert(b);
-
-			if (s == true || b == true)
+			var strawberry = document.getElementById('opt-straw').checked
+			var blueberry = document.getElementById('opt-blue').checked
+			if (strawberry || blueberry) {
 				return true;
-			else
+			}
+			else {
+				alert("Please choose a fruit before continuing.")
 				return false;
+			}
 		}
     </script>
 </head>

@@ -8,40 +8,87 @@
     .errormsg {
         /*font: Use a cool Google font*/
     	color: red;
-    	display: none; }
+    	display: none;
+			font-family: "Bitter", sans-serif;}
     </style>
 
-    <script type="text/javascript">
+		<script type="text/javascript">
+		    function checkForm(){
+		    	var fullName = document.getElementById('fullname').value
+		        var streetAddress = document.getElementById('streetaddr').value
+		        var nameError = document.getElementById('nameerrormsg').style
+		        var addressError = document.getElementById('addrerrormsg').style
+		        if (fullName=='' || streetAddress=='') {
+		            if (fullName==''&&streetAddress=='') {
+		                nameError.display='block';
+		                addressError.display='block';
+		            }
+		            else if (fullName=='') {
+		                nameError.display='block';
+		                addressError.display='none';
+		            }
+		            else {
+		                nameError.display='none';
+		                addressError.display='block';
+		            }
+		            return false
+		        }
+		        else {
+		            return true
+		        }}
+
+		        // Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank.
+		    </script>
+
+    <!-- <script type="text/javascript">
     function checkForm(){
     	// Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank.
-			var fullname = document.getElementById("fullname");
-			var streetAddress = document.getElementById("streetaddr");
-			var nameError = document.getElementById("nameerrormsg");
-			var addressError = document.getElementById("addrerrormsg");
+			var fullname = document.getElementById("fullname").value;
+			var streetAddress = document.getElementById("streetaddr").value;
+			var nameError = document.getElementById("nameerrormsg").style;
+			var addressError = document.getElementById("addrerrormsg").style;
 
-			var missingCounter = 0;
-
-			if (!fullname.value){
-				nameError.style.display = "block";
-				missingCounter += 1;
-			}
-			else {
-				nameError.style.display = "none";
+			if (fullname == "" || streetAddress == "") {
+				if (fullname == "" || streetAddress == "") {
+					nameerrormsg.display = "block";
+					addrerrormsg.display = "block";
 			}
 
-			if (!streetAddress.value){
-				addressError.style.display = "block";
-				missingCounter += 1;
-			}
-			else {
-				addressError.style.display = "none";
+				else if (fullname == "") {
+					nameerrormsg.display = "block";
+					addrerrormsg.display = "none";
+				}
+
+				else {
+					nameerrormsg.displat = "none";
+					addrerrormsg.display = "block";
+				}
+
 			}
 
-			if (missingCounter > 0){
-				return false;
-			}
+			// var missingCounter = 0;
+			//
+			// if (!fullname.value){
+			// 	nameError.style.display = "block";
+			// 	missingCounter += 1;
+			// }
+			// else {
+			// 	nameError.style.display = "none";
+			// }
+			//
+			// if (!streetAddress.value){
+			// 	addressError.style.display = "block";
+			// 	missingCounter += 1;
+			// }
+			// else {
+			// 	addressError.style.display = "none";
+			// }
+			//
+			// if (missingCounter > 0){
+			// 	return false;
+			// }
     }
-    </script>
+    </script> -->
 </head>
 <body>
     <h1>Challenge 4</h1>
