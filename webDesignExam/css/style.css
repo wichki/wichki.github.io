@@ -14,16 +14,16 @@ body {
 }
 
 .oneimage {
-  display: flex;
+  /* display: flex; */
   border: 5px blue solid;
   padding: 5%;
   width: 50%;
-  align-items: center;
+  /* align-items: center; */
 
   /* text-align: center; */
 }
 
-img {
+.wrapper img {
   width: 100%;
   /* min-width: 100%; */
   /* max-width: 100%; */
