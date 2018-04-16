@@ -7,12 +7,19 @@ body {
 }
 
 .wrapper {
-  display: inline-block;
+  display: flex;
+  width: 100%;
+  /* justify-content: space-around; */
+
 }
 
-img {
-  display: inline-block;
+.oneimage {
+  display: flex;
   border: 5px blue solid;
   padding: 5%;
   width: 50%;
+}
+
+img {
+  width: 100%;
 }

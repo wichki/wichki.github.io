@@ -4,13 +4,37 @@
     <meta charset="utf-8">
     <title>SI 539 Exam 2</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <script type="text/javascript">
+
+    function showImage(img){
+  		var imageDiv = document.getElementById("image1");
+  		imageDiv.style.display = "inline-block";
+  	}
+
+  	function hideImage(){
+  		var imageDiv = document.getElementById("image1");
+      imageDiv.style.display = "none";
+
+      // var otherImage = document.getElementById("image2");
+      // otherImage.style.
+  	}
+  	</script>
+
   </head>
   <body>
     <h1>William Kim</h1>
     <div class="wrapper">
-      <img src="images/examPic.JPG" alt="">
-      <img src="images/UMSI-logo.jpg" alt="">
+      <div class="oneimage" id="image1">
+        <img src="images/examPic.JPG" alt="">
+      </div>
+      <div class="oneimage" id="image2">
+        <img src="images/UMSI-logo.jpg" alt="">
+      </div>
   </div>
+  <button type="button" onclick="hideImage()">Hide Image</button>
+  <button type="button" onclick="showImage()">Show Image</button>
+
 
   </body>
 </html>
