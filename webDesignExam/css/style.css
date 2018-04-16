@@ -18,8 +18,13 @@ body {
   border: 5px blue solid;
   padding: 5%;
   width: 50%;
+  align-items: center;
+
+  /* text-align: center; */
 }
 
 img {
-  min-width: 100%;
+  width: 100%;
+  /* min-width: 100%; */
+  /* max-width: 100%; */
 }

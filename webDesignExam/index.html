@@ -9,22 +9,21 @@
 
     function showImage(){
   		var imageDiv = document.getElementById("image1");
-  		imageDiv.style.display = "inline-block";
+  		imageDiv.style.display = "flex";
   	}
 
   	function hideImage(){
   		var imageDiv = document.getElementById("image1");
       imageDiv.style.display = "none";
 
-      // var otherImage = document.getElementById("image2");
-      // otherImage.style.
+      var otherImage = document.getElementById("image2");
+      otherImage.style.margin = "auto";
   	}
   	</script>
-
   </head>
   <body>
     <h1>William Kim</h1>
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
       <div class="oneimage" id="image1">
         <img src="images/examPic.JPG" alt="">
       </div>
@@ -34,7 +33,5 @@
   </div>
   <button type="button" onclick="hideImage()">Hide Image</button>
   <button type="button" onclick="showImage()">Show Image</button>
-
-
   </body>
 </html>
